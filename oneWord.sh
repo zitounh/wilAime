@@ -12,15 +12,12 @@ function go(){
 	res=$(curl -silent 'https://chaquedetail.fr/wp-content/themes/astra-child/form_password/valid_input.php' --data "id=$1&val=$2")
 	echo $res
 }
-
+line=$1
 for i in `seq 1 7`;
 do
 	res=$(go $i $line)
 	is_yes "$res" "indice$i" "$line"
-	echo "$COUNTER words tested"
-	let COUNTER=COUNTER+1 
 done    
 res=$(go $i $line)
 is_yes "$res" "password" "$line"
-echo "$COUNTER words tested"
-let COUNTER=COUNTER+1 
+echo "$1 tested"
