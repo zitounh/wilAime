@@ -9,6 +9,4 @@ id=indice1&val=value
 ```
 
 where *id* takes values in "indice1" "indice2" "indice3" "indice4" "indice5" "indice6" "indice7"
-and *val* takes any suspected value for corresponding to the id
-
-Here the script stop once any indice is found.
+and *val* takes any suspected value corresponding to the choosen id
