@@ -1,11 +1,10 @@
 #!/bin/bash
-input="$HOME/Desktop/dict.txt"
+input="dict.txt"
 
 function is_yes(){
 	if [[ $1 == *"yes"* ]]
 	then
 		echo "indice $2 is $3"
-		exit 1
 	fi
 }
 
